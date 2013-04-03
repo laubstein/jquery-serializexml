@@ -12,9 +12,9 @@ When trying to send XML data, constructed using jQuery, to the server, I realize
 var dataToSend = $('<root><myData dataType="Boolean">True</myData></root>');
 
 console.log(dataToSend.html());
-# returns: <mydata datatype="Boolean">True</mydata>
-# as XML is case sensitive, I'm expecting
-# <myData dataType="Boolean">True</myData>
+// returns: <mydata datatype="Boolean">True</mydata>
+// as XML is case sensitive, I'm expecting
+// <myData dataType="Boolean">True</myData>
 ```
 
 ### Example
@@ -26,7 +26,7 @@ Usage example using $.parseXML and $.serializeXML together:
 var myXMLData = '<root><myData dataType="Boolean">True</myData></root>',
     myXMLObject = $.parseXML(myXMLData);
 console.log('Serialized XML: ' + $.serializeXML(myXMLObject));
-# returns: Serialized XML: <root><myData dataType="Boolean">True</myData></root>
+// returns: Serialized XML: <root><myData dataType="Boolean">True</myData></root>
 ```
 
 --------------------------------------
